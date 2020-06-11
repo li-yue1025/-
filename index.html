@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>试衣间</title>
+</head>
+<body background="images/bg.png" style="background-repeat:no-repeat;background-size:100% 100%;background-attachment: fixed;">
+    <div id="blink" style="text-align: center;"><a style="background:white; font-weight:bold;font-size:80px;">虚拟试衣间</a></div>  
+    <script language="javascript"> 
+    function changeColor(){ 
+        var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+        color=color.split("|"); 
+        document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+        } 
+    setInterval("changeColor()",200); 
+    </script>
+    <div style="text-align:center;font-size: 50px;"><a style="background:white;"><br>亲爱的用户，欢迎您访问我们的网站</a></div>
+    <style type="text/css">
+        #left{
+            float:left;width:500px;height:500px;
+        }
+        #right{
+            float:right;width:500px;height:500px;
+        }
+        #center{
+            height:500px;
+        }
+        </style>
+        <body>
+        <div id="left" style="text-align: center;font-size:30px;">
+            <a href="登录.html" style="text-decoration:none;background:white"><br>注册/登录</a><br><br>
+            <a href="帽子.html" style="text-decoration:none;background:white">帽子</a><br><br>
+            <a href="鞋子.html" style="text-decoration:none;background:white">鞋子</a><br><br>
+            <a href="眼镜.html" style="text-decoration:none;background:white">眼镜</a><br><br>
+            <a href="人物形象.html" style="text-decoration:none;background:white">人物形象</a>
+        </div>
+        <div id="right" style="text-align: center;font-size:30px;">
+            <a href="裤子.html" style="text-decoration:none;background:white"><br>裤子</a><br><br>
+            <a href="上衣.html" style="text-decoration:none;background:white">上衣</a><br><br>
+            <a href="外套.html" style="text-decoration:none;background:white">外套</a><br><br>
+            <a href="裙装.html" style="text-decoration:none;background:white">裙装</a><br><br>
+            <a href="其他.html" style="text-decoration:none;background:white">其他</a>
+        </div>
+        <div id="center" style="text-align: center;font-size:50px;">
+            <a href="开始搭配.html" style="text-decoration:none;background:white"><br><br>开始搭配</a>
+        </div>
+        </body>
+        </html>
